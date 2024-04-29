@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static "style.css" %}">
+  
+  
+</head>
+<body>
+
+  <nav id="nav-bar">
+    <div id="logo">
+      <h1>Sign Language Detection System Prototype</h1>
+    </div>
+  </nav>
+  
+  <center>
+  <main>
+  <div id="cam">
+      <img id="camera-feed" src="{% url "camera_feed" %}" alt="Camera Feed">
+  </div>
+  </main>
+</center>
+
+</body>
+</html>
